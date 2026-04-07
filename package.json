@@ -1,0 +1,18 @@
+{
+  "name": "syntx-rir",
+  "version": "1.0.0",
+  "description": "High-performance static masterpiece by Robyetul Islam",
+  "main": "index.html",
+  "scripts": {
+    "build": "mkdir -p dist && cp index.html about.html portfolio.html script.js style.css three-bg.js vercel.json README.md dist/",
+    "start": "npx -y serve ./"
+  },
+  "keywords": [
+    "cyberpunk",
+    "matrix",
+    "threejs",
+    "gsap"
+  ],
+  "author": "Robyetul Islam",
+  "license": "MIT"
+}

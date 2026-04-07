@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden overflow-y-auto w-full max-w-[100vw]">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#030303">
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚡</text></svg>">
+    <title>Code_RIR | Web Design</title>
+    <meta name="description"
+        content="A vibrant replica of the Floka Main Theme, now shifted to an Absolute Central Alignment.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#030303',
+                        secondary: '#1A1A1A',
+                        accentPink: '#ff007f',
+                        accentCyan: '#00f2ff',
+                        accentYellow: '#ffe600',
+                        accentPurple: '#bd00ff'
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body
+    class="max-w-[100vw] bg-primary text-white font-sans selection:bg-accentPink selection:text-white overflow-x-hidden relative">
+
+    <!-- Advanced Crack Sub-Routine Preloader -->
+    <div id="preloader"
+        class="fixed inset-0 z-[999999] bg-[#030303] flex items-center justify-center transition-opacity duration-1000">
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_rgba(0,242,255,0.05)_0%,_#030303_100%)]">
+        </div>
+
+        <div class="relative w-full max-w-2xl px-6 font-mono text-sm">
+            <div class="flex justify-between items-end border-b border-accentCyan/30 pb-2 mb-4">
+                <div class="text-accentCyan font-black tracking-widest animate-pulse">>>> CORE_OVERRIDE_V2.0</div>
+                <div class="text-[10px] uppercase text-gray-500 hidden sm:block">Root Access Payload</div>
+            </div>
+
+            <div id="terminal-logs"
+                class="h-32 overflow-hidden flex flex-col justify-end text-xs text-accentPink font-bold space-y-1 mb-6 uppercase tracking-wider">
+                <div class="opacity-50">> Booting kernel...</div>
+            </div>
+
+            <div class="w-full h-8 border border-white/10 bg-[#0a0a0a] p-1 relative skew-x-[-10deg]">
+                <div id="crack-bar"
+                    class="h-full w-0 bg-gradient-to-r from-accentCyan via-accentPurple to-accentPink shadow-glow-cyan">
+                </div>
+            </div>
+
+            <div class="flex justify-between mt-4 text-[10px] font-black uppercase tracking-[0.2em] text-gray-400">
+                <span id="crack-status" class="animate-pulse">Establishing Connection...</span>
+                <span id="crack-pct" class="text-accentCyan">0.00%</span>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Elite Cursor -->
+    <div id="cursor"
+        class="fixed top-0 left-0 pointer-events-none z-[100000] w-3 h-3 bg-accentCyan rounded-full transform -translate-x-1/2 -translate-y-1/2 mix-blend-screen"
+        style="transition: width 0.3s, height 0.3s, background-color 0.3s, border 0.3s;"></div>
+
+    <!-- Elite Mobile App Navigation Bar -->
+    <div class="fixed bottom-0 left-0 w-full bg-[#030303]/90 backdrop-blur-xl border-t border-white/5 md:hidden flex justify-around items-center py-4 px-2 z-[99000]"
+        style="padding-bottom: env(safe-area-inset-bottom, 1rem);">
+        <a href="index.html"
+            class="flex flex-col items-center text-[9px] text-accentCyan font-black uppercase tracking-widest transition-colors"><i
+                class="fas fa-globe-americas mb-2 text-xl"></i> Base</a>
+        <a href="about.html"
+            class="flex flex-col items-center text-[9px] text-gray-400 font-black uppercase tracking-widest hover:text-accentPink transition-colors"><i
+                class="fas fa-atom mb-2 text-xl"></i> Core</a>
+        <a href="portfolio.html"
+            class="flex flex-col items-center text-[9px] text-gray-400 font-black uppercase tracking-widest hover:text-accentYellow transition-colors"><i
+                class="fas fa-layer-group mb-2 text-xl"></i> Grid</a>
+        <a href="mailto:robyetulprowork1234@gmail.com"
+            class="flex flex-col items-center text-[9px] text-gray-400 font-black uppercase tracking-widest hover:text-accentPurple transition-colors"><i
+                class="fas fa-bolt mb-2 text-xl"></i> Ping</a>
+    </div>
+
+    <!-- Centralized Header -->
+    <!-- Unified Responsive Header -->
+    <header id="header"
+        class="fixed top-0 w-full z-[1000] py-6 transition-all duration-500 border-b border-white/5 bg-primary/20 backdrop-blur-md">
+        <div class="container mx-auto px-3 sm:px-6 md:px-12 flex items-center justify-between">
+            <a href="index.html"
+                class="text-xl md:text-3xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-accentCyan to-accentPink logo">Code_RIR.</a>
+
+            <nav
+                class="hidden md:flex items-center gap-5 md:gap-10 px-8 py-3 md:px-12 md:py-4 rounded-full bg-primary/80 backdrop-blur-md shadow-glow-purple">
+                <a href="index.html"
+                    class="nav-link text-sm font-bold uppercase tracking-widest text-accentCyan">Home</a>
+                <a href="about.html"
+                    class="nav-link text-sm font-bold uppercase tracking-widest hover:text-accentPink transition-colors">Studio</a>
+                <a href="portfolio.html"
+                    class="nav-link text-sm font-bold uppercase tracking-widest hover:text-accentYellow transition-colors">Works</a>
+            </nav>
+
+            <div class="flex items-center gap-6 md:hidden">
+                <!-- Hamburger Menu Toggle -->
+                <div id="menu-toggle" class="cursor-pointer flex flex-col gap-2 hover-trigger w-10 relative z-[1001]">
+                    <span class="line-1 w-full h-1 bg-white transition-all duration-300 transform origin-right"></span>
+                    <span class="line-2 w-2/3 h-1 bg-accentPink transition-all duration-300 self-end"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobile-menu"
+            class="absolute top-[100%] left-0 w-full bg-primary/95 backdrop-blur-2xl border-b border-white/10 flex-col items-center py-10 gap-8 shadow-glow-cyan hidden transition-all duration-300 opacity-0 translate-y-[-20px]">
+            <a href="index.html"
+                class="text-2xl font-black uppercase tracking-widest hover:text-accentCyan transition-colors">Home</a>
+            <a href="about.html"
+                class="text-2xl font-black uppercase tracking-widest text-accentPink hover:text-white transition-colors">Studio</a>
+            <a href="portfolio.html"
+                class="text-2xl font-black uppercase tracking-widest text-accentYellow hover:text-white transition-colors">Works</a>
+            <a href="mailto:robyetulprowork1234@gmail.com"
+                class="mt-4 px-8 py-4 border border-white/20 rounded-full text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-colors">Contact</a>
+        </div>
+    </header>
+
+    <!-- 1. Central Hero Section -->
+    <section id="hero"
+        class="relative min-h-screen w-full flex items-center justify-center pt-24 overflow-hidden colorful-bg-gradient text-center">
+        <!-- ThreeJS Canvas -->
+        <canvas id="hero-canvas" class="absolute inset-0 w-full h-full pointer-events-none z-0"></canvas>
+
+        <!-- Floating Ambient Background Nodes -->
+        <div
+            class="absolute w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-accentCyan/20 rounded-full blur-[120px] mix-blend-screen -top-20 -left-20 animate-float-slow pointer-events-none">
+        </div>
+        <div
+            class="absolute w-[400px] md:w-[800px] h-[400px] md:h-[800px] bg-accentPink/20 rounded-full blur-[150px] mix-blend-screen bottom-0 right-0 animate-float-med">
+        </div>
+
+        <div class="container mx-auto px-3 sm:px-6 md:px-12 relative z-10 flex flex-col items-center">
+
+            <div class="reveal mt-20">
+                <span
+                    class="inline-block border border-accentCyan text-accentCyan px-6 py-2 md:px-10 md:py-3 rounded-full text-xs font-bold uppercase tracking-widest mb-10 bg-accentCyan/10 backdrop-blur-sm shadow-glow-cyan animate-pulse">Welcome
+                    to the Matrix</span>
+
+                <h1 class="text-[clamp(28px,10vw,140px)] font-black leading-[0.9] tracking-[-0.04em] mb-12">
+                    <span
+                        class="block gs-reveal text-transparent bg-clip-text bg-gradient-to-r from-accentCyan via-accentPurple to-accentPink">Global
+                        Nodes</span>
+                    <span class="block gs-reveal text-[clamp(28px,8vw,120px)]">Perfectly Aligned.</span>
+                </h1>
+
+                <p
+                    class="text-xl text-gray-300 max-w-3xl mx-auto font-medium tracking-wide mb-16 gs-reveal leading-relaxed">
+                    Code_RIR develops immersive digital experiences, absolute structural mastery, and high-velocity code
+                    architecture for global scaling nodes. Now centered for Maximum Impact.</p>
+
+                <div class="flex justify-center items-center gap-8 gs-reveal">
+                    <a href="portfolio.html"
+                        class="bg-white text-primary px-8 py-4 md:px-16 md:py-6 rounded-full text-sm font-black uppercase tracking-widest hover:bg-accentCyan transition-all shadow-glow-cyan">Enter
+                        Archive</a>
+                    <a href="#about"
+                        class="text-white border-b-2 border-white pb-2 text-sm font-black uppercase tracking-widest hover:text-accentPink hover:border-accentPink transition-all">View
+                        Philosophy</a>
+                </div>
+            </div>
+
+            <div class="mt-32 sm:mt-40 md:mt-56 w-full gs-reveal relative z-20">
+                <div class="relative w-full max-w-6xl mx-auto aspect-video rounded-3xl md:rounded-[50px] overflow-hidden border border-white/20 shadow-glow-purple group hover-trigger cursor-pointer"
+                    data-tilt data-tilt-max="5" data-tilt-speed="400" data-tilt-glare data-tilt-max-glare="0.3"
+                    onclick="playMotivationVideo()">
+                    <img id="video-thumbnail" src="https://img.youtube.com/vi/eVTXPUF4Oz4/maxresdefault.jpg"
+                        class="w-full h-full object-cover grayscale group-hover:grayscale-0 blur-[2px] group-hover:blur-0 transition-all duration-700">
+                    <div id="video-overlay"
+                        class="absolute inset-0 bg-primary/60 group-hover:bg-primary/20 transition-all duration-500 flex flex-col items-center justify-center z-10">
+                        <div
+                            class="w-20 h-20 md:w-40 md:h-40 rounded-full border-2 border-accentCyan backdrop-blur-xl flex items-center justify-center text-white bg-accentCyan/10 group-hover:bg-accentCyan transition-all duration-500 shadow-glow-cyan transform group-hover:scale-110 mb-2 pointer-events-none">
+                            <i class="fas fa-play text-2xl md:text-5xl md:ml-2"></i>
+                        </div>
+                        <h3
+                            class="absolute text-center px-4 w-full bottom-0 mb-10 md:mb-20 translate-y-8 opacity-0 group-hover:opacity-100 group-hover:translate-y-0 text-white font-black text-xs sm:text-lg md:text-4xl uppercase tracking-[0.2em] md:tracking-[0.3em] drop-shadow-[0_4px_12px_rgba(0,242,255,0.8)] transition-all duration-700 ease-out pointer-events-none">
+                            You need motivation play this song
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. About / Center Fun Facts -->
+    <section id="about" class="py-32 sm:py-40 md:py-48 bg-primary relative overflow-hidden">
+        <div class="container mx-auto px-3 sm:px-6 md:px-12 text-center relative z-10">
+            <!-- Center Spinning Logo -->
+            <div
+                class="relative w-24 h-24 md:w-48 md:h-48 mx-auto mb-20 rotating-badge text-gray-400 hover:text-accentPink transition-colors">
+                <svg viewBox="0 0 100 100" class="w-full h-full">
+                    <path id="circlePath" d="M 50,50 m -35,0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0" fill="none" /><text
+                        font-size="11" font-weight="bold" letter-spacing="2">
+                        <textPath xlink:href="#circlePath">ESTABLISHED WORLDWIDE 2026 • </textPath>
+                    </text>
+                </svg>
+                <i
+                    class="fas fa-gem absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-4xl text-accentPink"></i>
+            </div>
+
+            <h2
+                class="text-[clamp(28px,8vw,96px)] font-black leading-tight tracking-tight mb-24 max-w-5xl mx-auto reveal">
+                We bring you a centered, absolute perspective.</h2>
+
+            <!-- Fun Facts Grid (Centered) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 md:gap-10 reveal">
+                <div class="glass-card hover-glow p-8 sm:p-10 md:p-16 rounded-3xl md:rounded-[40px] border border-accentPink/30"
+                    data-tilt data-tilt-scale="1.05">
+                    <h3
+                        class="text-4xl md:text-6xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-br from-accentPink to-white mb-6">
+                        12+</h3>
+                    <p class="text-lg font-bold uppercase tracking-widest text-gray-400">Years of Experience</p>
+                </div>
+                <div class="glass-card hover-glow p-8 sm:p-10 md:p-16 rounded-3xl md:rounded-[40px] border border-accentCyan/30"
+                    data-tilt data-tilt-scale="1.05">
+                    <h3
+                        class="text-4xl md:text-6xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-br from-accentCyan to-white mb-6">
+                        3k+</h3>
+                    <p class="text-lg font-bold uppercase tracking-widest text-gray-400">Happy Users</p>
+                </div>
+                <div class="glass-card hover-glow p-8 sm:p-10 md:p-16 rounded-3xl md:rounded-[40px] border border-accentYellow/30"
+                    data-tilt data-tilt-scale="1.05">
+                    <h3
+                        class="text-4xl md:text-6xl md:text-8xl font-black text-transparent bg-clip-text bg-gradient-to-br from-accentYellow to-white mb-6">
+                        99%</h3>
+                    <p class="text-lg font-bold uppercase tracking-widest text-gray-400">Project Success</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Portfolio Mesh (Centered & Massive) -->
+    <section id="portfolio" class="py-32 sm:py-40 md:py-48 bg-secondary relative">
+        <div class="container mx-auto px-3 sm:px-6 md:px-12 text-center mb-24 reveal">
+            <span
+                class="inline-block border border-accentYellow text-accentYellow px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest mb-8">Selected
+                Works</span>
+            <h2 class="text-[clamp(28px,9vw,128px)] font-black tracking-tight mb-16">Supreme Archival.</h2>
+            <a href="portfolio.html"
+                class="inline-block border border-white/20 px-8 py-3 md:px-12 md:py-4 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-white hover:text-primary transition-all">Explore
+                Entire Map</a>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 md:gap-10 px-3 sm:px-6 md:px-12 max-w-8xl mx-auto">
+            <div class="portfolio-item rounded-3xl md:rounded-[40px] bg-primary relative overflow-hidden group cursor-pointer aspect-square border border-white/10"
+                data-tilt data-tilt-max="3" data-tilt-speed="400">
+                <img src="https://cdn.pixabay.com/photo/2016/03/27/20/12/desk-1284085_1280.jpg"
+                    class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-primary/95 to-transparent flex flex-col justify-end p-8 sm:p-10 md:p-16">
+                    <h3 class="text-3xl md:text-5xl font-black mb-4 group-hover:text-accentCyan transition-colors">
+                        Fintech Protocol</h3>
+                    <p class="text-lg font-bold uppercase tracking-widest text-gray-400">React / Node.js</p>
+                </div>
+            </div>
+            <div class="portfolio-item rounded-3xl md:rounded-[40px] bg-primary relative overflow-hidden group cursor-pointer aspect-square border border-white/10"
+                data-tilt data-tilt-max="3" data-tilt-speed="400">
+                <img src="https://cdn.pixabay.com/photo/2018/01/17/07/06/laptop-3087585_1280.jpg"
+                    class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-primary/95 to-transparent flex flex-col justify-end p-6 sm:p-5 sm:p-8 md:p-10 md:p-16">
+                    <h3 class="text-3xl md:text-5xl font-black mb-4 group-hover:text-accentPink transition-colors">Alpha
+                        Framework</h3>
+                    <p class="text-lg font-bold uppercase tracking-widest text-gray-400">UI/UX Design</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Infinite Marquee Client Grid (New Section) -->
+    <section id="clients" class="py-32 bg-primary border-t border-white/5 relative overflow-hidden">
+        <div class="container mx-auto px-3 sm:px-6 md:px-12 text-center mb-16 reveal">
+            <h2 class="text-3xl md:text-5xl font-black uppercase tracking-tight mb-4">Trusted Across the Mesh.</h2>
+            <p class="text-sm font-bold uppercase tracking-widest text-gray-500">Global Partners & Architectures</p>
+        </div>
+        <!-- Moving Text Banner -->
+        <div class="py-24 border-y border-white/5 relative overflow-hidden bg-primary/50">
+            <div
+                class="animate-marquee flex whitespace-nowrap gap-8 items-center text-4xl md:text-7xl font-black uppercase text-transparent bg-clip-text bg-gradient-to-r from-gray-700 to-gray-500 opacity-20">
+                <span>NEXUS NODE •</span><span>ALPHA PROTOCOL •</span><span>QUANTUM MESH •</span><span>CYBER CORE
+                    •</span><span>OMEGA ARRAY •</span><span>CODE_RIR ARCHIVE •</span>
+                <span>NEXUS NODE •</span><span>ALPHA PROTOCOL •</span><span>QUANTUM MESH •</span><span>CYBER CORE
+                    •</span><span>OMEGA ARRAY •</span><span>CODE_RIR ARCHIVE •</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Technical Grid (New Section) -->
+    <section id="skills" class="py-32 sm:py-40 md:py-48 bg-secondary relative">
+        <div
+            class="absolute w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-accentCyan/10 rounded-full blur-[120px] mix-blend-screen top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 animate-float-med">
+        </div>
+        <div class="container mx-auto px-3 sm:px-6 md:px-12 text-center relative z-10 reveal">
+            <span
+                class="inline-block border border-accentPink text-accentPink px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest mb-8 bg-accentPink/10">Technical
+                Engine</span>
+            <h2 class="text-[clamp(28px,9vw,128px)] font-black tracking-tight mb-24 uppercase">The Grid.</h2>
+
+            <div id="tech-grid" class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 max-w-6xl mx-auto">
+                <!-- Javascript will populate 30+ highly animated technical nodes here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Pricing Architecture (New Section) -->
+    <section id="pricing" class="py-32 sm:py-40 md:py-48 bg-primary relative border-y border-white/5">
+        <div class="container mx-auto px-3 sm:px-6 md:px-12 text-center mb-32 reveal relative z-10">
+            <span
+                class="inline-block border border-accentPurple text-accentPurple px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest mb-8 bg-accentPurple/10">Acquisition</span>
+            <h2 class="text-[clamp(28px,9vw,128px)] font-black tracking-tight mb-8">Deploy Nodes.</h2>
+            <p class="text-xl text-gray-400 max-w-2xl mx-auto">Absolute architecture available for global integration.
+            </p>
+        </div>
+
+        <div
+            class="container mx-auto px-3 sm:px-6 md:px-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 max-w-7xl mx-auto reveal items-center">
+            <!-- Node 1 -->
+            <div class="glass-card hover-glow border border-white/10 p-8 sm:p-10 md:p-16 rounded-3xl md:rounded-[40px] text-center"
+                data-tilt data-tilt-max="5" data-tilt-speed="400">
+                <span
+                    class="inline-block px-4 py-1 rounded bg-white/10 text-xs font-bold uppercase tracking-widest mb-6 text-gray-400">Starter</span>
+                <div class="text-3xl md:text-5xl md:text-7xl font-black mb-12">$2.4k</div>
+                <ul class="text-gray-400 uppercase text-xs font-bold tracking-widest space-y-4 mb-16">
+                    <li>Basic Architecture</li>
+                    <li>Wireframe Logic</li>
+                    <li>Standard Hosting</li>
+                </ul>
+                <a href="#"
+                    class="inline-block px-10 py-4 border border-white/20 rounded-full text-sm font-bold hover:bg-accentCyan hover:border-accentCyan hover:text-primary transition-all duration-300">Initiate</a>
+            </div>
+            <!-- Node 2 -->
+            <div class="glass-card hover-glow border border-accentPink/50 shadow-glow-pink p-6 sm:p-5 sm:p-8 md:p-10 md:p-16 rounded-3xl md:rounded-[40px] text-center transform scale-110 relative overflow-hidden"
+                data-tilt data-tilt-max="5" data-tilt-speed="400">
+                <div
+                    class="absolute top-0 right-0 bg-accentPink text-white px-3 sm:px-6 md:px-12 py-3 text-xs font-black uppercase tracking-widest">
+                    Alpha</div>
+                <h4 class="text-sm font-bold uppercase tracking-widest text-accentPink mb-8">Masterpiece Node</h4>
+                <div class="text-3xl md:text-5xl md:text-7xl font-black mb-12">$8.9k</div>
+                <ul class="text-gray-300 uppercase text-xs font-bold tracking-widest space-y-4 mb-16">
+                    <li>3D Ambient Motion</li>
+                    <li>Vanilla Tilt Engine</li>
+                    <li>Supreme Hosting</li>
+                </ul>
+                <a href="#"
+                    class="inline-block px-10 py-5 bg-accentPink text-white rounded-full text-sm font-black hover:bg-white hover:text-primary transition-all duration-300 shadow-glow-pink">Deploy</a>
+            </div>
+            <!-- Node 3 -->
+            <div class="glass-card hover-glow border border-white/10 p-8 sm:p-10 md:p-16 rounded-3xl md:rounded-[40px] text-center"
+                data-tilt data-tilt-max="5" data-tilt-speed="400">
+                <h4 class="text-sm font-bold uppercase tracking-widest text-accentYellow mb-8">Omni Node</h4>
+                <div class="text-3xl md:text-5xl md:text-7xl font-black mb-12">$25k</div>
+                <ul class="text-gray-400 uppercase text-xs font-bold tracking-widest space-y-4 mb-16">
+                    <li>Omni-Infinite Generation</li>
+                    <li>Multi-Matrix Protocol</li>
+                    <li>Dedicated Architecture</li>
+                </ul>
+                <a href="#"
+                    class="inline-block px-10 py-4 border border-white/20 rounded-full text-sm font-bold hover:bg-accentYellow hover:border-accentYellow hover:text-primary transition-all duration-300">Initiate</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Dynamic Data Nodes (New Section) -->
+    <section id="data-nodes" class="py-32 sm:py-40 md:py-48 bg-secondary relative overflow-hidden">
+        <!-- Abstract light blobs -->
+        <div
+            class="absolute w-[200px] md:w-[400px] h-[200px] md:h-[400px] bg-accentPurple/20 rounded-full blur-[100px] mix-blend-screen right-0 bottom-0 animate-float-slow">
+        </div>
+
+        <div class="container mx-auto px-3 sm:px-6 md:px-12 text-center relative z-10 reveal">
+            <span
+                class="inline-block border border-accentCyan text-accentCyan px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest mb-16 bg-accentCyan/10">Data
+                Visualization</span>
+
+            <div
+                class="grid md:grid-cols-3 gap-6 sm:p-5 sm:p-8 md:p-10 md:p-16 items-center justify-center max-w-7xl mx-auto">
+                <div class="w-36 h-36 sm:w-48 sm:h-48 md:w-64 md:h-64 mx-auto rounded-full bg-primary border-4 border-white/5 flex items-center justify-center flex-col relative group cursor-pointer"
+                    data-tilt data-tilt-max="15" data-tilt-speed="300">
+                    <div
+                        class="absolute inset-0 bg-accentCyan/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500">
+                    </div>
+                    <span
+                        class="text-4xl md:text-6xl font-black text-accentCyan group-hover:scale-125 transition-transform duration-500">98<span
+                            class="text-xl">%</span></span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest mt-4">Node Efficiency</span>
+                </div>
+                <div class="w-36 h-36 sm:w-48 sm:h-48 md:w-64 md:h-64 md:w-80 md:h-80 mx-auto rounded-full bg-primary border-4 border-accentPink/30 flex items-center justify-center flex-col relative group cursor-pointer shadow-glow-pink"
+                    data-tilt data-tilt-max="20" data-tilt-speed="300">
+                    <div
+                        class="absolute inset-0 bg-accentPink/20 rounded-full blur-2xl opacity-50 group-hover:opacity-100 transition-all duration-500 animate-pulse">
+                    </div>
+                    <span
+                        class="text-5xl md:text-8xl font-black text-accentPink group-hover:scale-125 transition-transform duration-500">14<span
+                            class="text-2xl">TB</span></span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest mt-4">Data Processed</span>
+                </div>
+                <div class="w-36 h-36 sm:w-48 sm:h-48 md:w-64 md:h-64 mx-auto rounded-full bg-primary border-4 border-white/5 flex items-center justify-center flex-col relative group cursor-pointer"
+                    data-tilt data-tilt-max="15" data-tilt-speed="300">
+                    <div
+                        class="absolute inset-0 bg-accentYellow/20 rounded-full blur-xl opacity-0 group-hover:opacity-100 transition-all duration-500">
+                    </div>
+                    <span
+                        class="text-4xl md:text-6xl font-black text-accentYellow group-hover:scale-125 transition-transform duration-500">0.1<span
+                            class="text-xl">MS</span></span>
+                    <span class="text-[10px] font-bold uppercase tracking-widest mt-4">Latency Rate</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Vertical Typography Path (New Section) -->
+    <section class="h-[50vh] bg-primary relative flex items-center overflow-hidden border-t border-white/5">
+        <div
+            class="w-full whitespace-nowrap gs-scroll-text text-[clamp(60px,10vw,150px)] font-black uppercase text-transparent bg-clip-text bg-gradient-to-r from-gray-700 via-gray-500 to-gray-700 opacity-20">
+            • ABSOLUTE STRUCTURAL MASTERY • DEPLOYED WORLDWIDE • ABSOLUTE STRUCTURAL MASTERY •
+        </div>
+    </section>
+
+    <!-- 9. Team Alpha Showcase (New Section) -->
+    <section id="team" class="py-32 sm:py-40 md:py-48 bg-primary relative">
+        <div class="container mx-auto px-3 sm:px-6 md:px-12 text-center mb-32 reveal">
+            <span
+                class="inline-block border border-accentYellow text-accentYellow px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest mb-8 bg-accentYellow/10">The
+                Architects</span>
+            <h2 class="text-[clamp(28px,8vw,128px)] font-black tracking-tight mb-8">Team Alpha.</h2>
+        </div>
+
+        <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-10 px-3 sm:px-6 md:px-12 max-w-7xl mx-auto reveal">
+            <div class="glass-card hover-glow border border-white/10 p-5 sm:p-8 md:p-12 rounded-3xl md:rounded-[40px] text-center"
+                data-tilt data-tilt-max="10" data-tilt-speed="400">
+                <div
+                    class="w-24 h-24 md:w-48 md:h-48 mx-auto rounded-full overflow-hidden mb-10 border-4 border-accentCyan shadow-glow-cyan transform transition-transform duration-500 hover:rotate-180">
+                    <img src="https://cdn.pixabay.com/photo/2017/08/01/00/38/man-2562325_1280.jpg"
+                        class="w-full h-full object-cover">
+                </div>
+                <h4 class="text-3xl font-black mb-2">Robyetul Islam</h4>
+                <p class="text-xs font-bold uppercase tracking-widest text-accentCyan">Chief Architect</p>
+            </div>
+            <div class="glass-card hover-glow border border-white/10 p-5 sm:p-8 md:p-12 rounded-3xl md:rounded-[40px] text-center"
+                data-tilt data-tilt-max="10" data-tilt-speed="400">
+                <div
+                    class="w-24 h-24 md:w-48 md:h-48 mx-auto rounded-full overflow-hidden mb-10 border-4 border-accentPink shadow-glow-pink transform transition-transform duration-500 hover:rotate-180">
+                    <img src="https://cdn.pixabay.com/photo/2023/04/03/04/48/woman-7895953_1280.jpg"
+                        class="w-full h-full object-cover">
+                </div>
+                <h4 class="text-3xl font-black mb-2">Elena Rivera</h4>
+                <p class="text-xs font-bold uppercase tracking-widest text-accentPink">Lead UX Designer</p>
+            </div>
+            <div class="glass-card hover-glow border border-white/10 p-5 sm:p-8 md:p-12 rounded-3xl md:rounded-[40px] text-center"
+                data-tilt data-tilt-max="10" data-tilt-speed="400">
+                <div
+                    class="w-24 h-24 md:w-48 md:h-48 mx-auto rounded-full overflow-hidden mb-10 border-4 border-accentYellow shadow-glow-purple transform transition-transform duration-500 hover:-rotate-180">
+                    <!-- Added random CDN people image for variety -->
+                    <img src="https://cdn.pixabay.com/photo/2017/12/16/07/40/man-3022255_1280.jpg"
+                        class="w-full h-full object-cover grayscale">
+                </div>
+                <h4 class="text-3xl font-black mb-2">Julian Brooks</h4>
+                <p class="text-xs font-bold uppercase tracking-widest text-accentYellow">Protocol Engineer</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Testimonial Glass Grid (New Section) -->
+    <section id="testimonials"
+        class="py-32 sm:py-40 md:py-48 bg-primary relative overflow-hidden border-t border-white/5">
+        <div
+            class="absolute w-[400px] md:w-[800px] h-[400px] md:h-[800px] bg-accentYellow/10 rounded-full blur-[150px] mix-blend-screen left-[-200px] top-1/2 transform -translate-y-1/2 animate-float-med pointer-events-none">
+        </div>
+        <div class="container mx-auto px-3 sm:px-6 md:px-12 text-center mb-32 reveal relative z-10">
+            <span
+                class="inline-block border border-accentYellow text-accentYellow px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest mb-8 bg-accentYellow/10">Validation</span>
+            <h2 class="text-[clamp(28px,8vw,128px)] font-black tracking-tight mb-8">What They Say.</h2>
+        </div>
+
+        <div
+            class="container mx-auto px-3 sm:px-6 md:px-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 max-w-7xl mx-auto reveal">
+            <div class="glass-card p-8 sm:p-10 md:p-16 rounded-3xl md:rounded-[40px] border border-white/10 hover-glow cursor-alias relative group"
+                data-tilt data-tilt-max="5" data-tilt-speed="400">
+                <i
+                    class="fas fa-quote-right text-4xl md:text-6xl text-white/5 absolute top-10 right-10 group-hover:text-accentYellow/20 transition-colors duration-500"></i>
+                <p
+                    class="text-xl font-medium leading-relaxed mb-12 text-gray-300 group-hover:text-white transition-colors duration-500">
+                    "The architecture Code_RIR delivered is beyond robust. Their nodes handle massive asynchronous loops
+                    effortlessly."</p>
+                <div class="flex items-center gap-6">
+                    <img src="https://cdn.pixabay.com/photo/2016/03/27/20/12/desk-1284085_1280.jpg"
+                        class="w-16 h-16 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all border-2 border-transparent group-hover:border-accentYellow">
+                    <div>
+                        <h4 class="font-black text-lg">Alex V.</h4>
+                        <p class="text-xs uppercase font-bold tracking-widest text-accentYellow">CTO, Nexus Corp</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card p-8 sm:p-10 md:p-16 rounded-3xl md:rounded-[40px] border border-white/10 hover-glow cursor-alias relative group transform lg:translate-y-16"
+                data-tilt data-tilt-max="5" data-tilt-speed="400">
+                <i
+                    class="fas fa-quote-right text-4xl md:text-6xl text-white/5 absolute top-10 right-10 group-hover:text-accentPink/20 transition-colors duration-500"></i>
+                <p
+                    class="text-xl font-medium leading-relaxed mb-12 text-gray-300 group-hover:text-white transition-colors duration-500">
+                    "Absolute structural mastery. Our deployment time went from hours to literally milliseconds."</p>
+                <div class="flex items-center gap-6">
+                    <img src="https://cdn.pixabay.com/photo/2017/04/25/22/28/despaired-2261021_1280.jpg"
+                        class="w-16 h-16 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all border-2 border-transparent group-hover:border-accentPink">
+                    <div>
+                        <h4 class="font-black text-lg">Sarah Jenkins</h4>
+                        <p class="text-xs uppercase font-bold tracking-widest text-accentPink">VP Engineering</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="glass-card p-8 sm:p-10 md:p-16 rounded-3xl md:rounded-[40px] border border-white/10 hover-glow cursor-alias relative group"
+                data-tilt data-tilt-max="5" data-tilt-speed="400">
+                <i
+                    class="fas fa-quote-right text-4xl md:text-6xl text-white/5 absolute top-10 right-10 group-hover:text-accentCyan/20 transition-colors duration-500"></i>
+                <p
+                    class="text-xl font-medium leading-relaxed mb-12 text-gray-300 group-hover:text-white transition-colors duration-500">
+                    "The holographic interaction states and elite cursor tracking completely redefined our SaaS
+                    interface."</p>
+                <div class="flex items-center gap-6">
+                    <img src="https://cdn.pixabay.com/photo/2018/01/17/07/06/laptop-3087585_1280.jpg"
+                        class="w-16 h-16 rounded-full object-cover grayscale group-hover:grayscale-0 transition-all border-2 border-transparent group-hover:border-accentCyan">
+                    <div>
+                        <h4 class="font-black text-lg">Marcus T.</h4>
+                        <p class="text-xs uppercase font-bold tracking-widest text-accentCyan">Product Lead</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 11. Holographic Accordion / FAQ (New Section) -->
+    <section id="faq" class="py-32 sm:py-40 md:py-48 bg-secondary border-t border-white/5">
+        <div
+            class="container mx-auto px-3 sm:px-6 md:px-12 grid md:grid-cols-2 gap-12 md:gap-24 items-center max-w-7xl mx-auto reveal">
+            <div>
+                <h2 class="text-3xl md:text-5xl md:text-8xl font-black mb-12">Core<br>Inquiries.</h2>
+                <p class="text-xl leading-relaxed text-gray-400 mb-16">Deep structural breakdown of our central
+                    protocol.</p>
+                <!-- Central Rotating Geometry -->
+                <div class="w-24 h-24 md:w-48 md:h-48 border border-white/10 rounded-full flex items-center justify-center relative animate-float-slow group"
+                    data-tilt>
+                    <div
+                        class="w-20 h-20 md:w-32 md:h-32 border border-accentPink/50 rounded-full flex items-center justify-center animate-[spin_4s_linear_infinite] shadow-glow-pink">
+                        <div class="w-16 h-16 bg-accentPink/20 rounded-full blur-md"></div>
+                    </div>
+                    <i
+                        class="fas fa-microchip absolute text-3xl text-white group-hover:text-accentPink transition-colors"></i>
+                </div>
+            </div>
+
+            <div class="accordion w-full">
+                <!-- Accordion items rendered manually to ensure exact hover states -->
+                <div class="accordion-item border-b border-white/10 py-10 overflow-hidden cursor-pointer group">
+                    <div class="accordion-header flex justify-between items-center pr-4">
+                        <h3 class="text-3xl font-black group-hover:text-accentCyan transition-colors">What is the Alpha
+                            Protocol?</h3>
+                        <i
+                            class="fas fa-plus text-2xl group-hover:rotate-180 transition-transform duration-500 group-hover:text-accentCyan"></i>
+                    </div>
+                    <div
+                        class="accordion-content h-0 overflow-hidden text-gray-400 mt-0 opacity-0 transition-all duration-300">
+                        <p class="pt-8 text-lg font-medium leading-relaxed">It is our proprietary deployment sequence
+                            ensuring absolute structural stability across global data centers in milliseconds.</p>
+                    </div>
+                </div>
+                <div class="accordion-item border-b border-white/10 py-10 overflow-hidden cursor-pointer group">
+                    <div class="accordion-header flex justify-between items-center pr-4">
+                        <h3 class="text-3xl font-black group-hover:text-accentYellow transition-colors">How do you scale
+                            Nodes?</h3>
+                        <i
+                            class="fas fa-plus text-2xl group-hover:rotate-180 transition-transform duration-500 group-hover:text-accentYellow"></i>
+                    </div>
+                    <div
+                        class="accordion-content h-0 overflow-hidden text-gray-400 mt-0 opacity-0 transition-all duration-300">
+                        <p class="pt-8 text-lg font-medium leading-relaxed">By shifting weight entirely asynchronously.
+                            Through load-balanced proxy meshes configured in real-time.</p>
+                    </div>
+                </div>
+                <div class="accordion-item border-b border-white/10 py-10 overflow-hidden cursor-pointer group">
+                    <div class="accordion-header flex justify-between items-center pr-4">
+                        <h3 class="text-3xl font-black group-hover:text-accentPink transition-colors">Can we integrate
+                            custom APIs?</h3>
+                        <i
+                            class="fas fa-plus text-2xl group-hover:rotate-180 transition-transform duration-500 group-hover:text-accentPink"></i>
+                    </div>
+                    <div
+                        class="accordion-content h-0 overflow-hidden text-gray-400 mt-0 opacity-0 transition-all duration-300">
+                        <p class="pt-8 text-lg font-medium leading-relaxed">Yes. Our framework supports infinitely
+                            flexible REST and GraphQL aggregation with zero latency penalties.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 11.5 Cyber Straps (New Section) -->
+    <div
+        class="relative w-full h-32 md:h-56 overflow-hidden bg-primary flex flex-col justify-center transform -skew-y-3 drop-shadow-2xl z-50 my-16 md:my-32 border-y border-white/5">
+
+        <div
+            class="absolute w-[200vw] h-10 md:h-16 bg-gradient-to-r from-accentCyan via-accentPurple to-accentPink transform rotate-3 flex items-center justify-center top-4 md:top-12 shadow-glow-cyan animate-marquee-fast border-t border-b border-white/30 backdrop-blur-md mix-blend-screen opacity-90">
+            <span
+                class="text-white drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] font-black uppercase tracking-[0.2em] md:tracking-[0.5em] text-xs md:text-xl lg:text-3xl whitespace-nowrap px-4">
+                /// OVERRIDE SEQUENCE /// SYSTEM ONLINE /// OVERRIDE SEQUENCE /// SYSTEM ONLINE /// OVERRIDE SEQUENCE
+                /// SYSTEM ONLINE /// OVERRIDE SEQUENCE /// SYSTEM ONLINE /// OVERRIDE SEQUENCE ///
+            </span>
+        </div>
+
+        <div
+            class="absolute w-[200vw] h-10 md:h-16 bg-gradient-to-l from-accentYellow via-accentPink to-accentCyan transform -rotate-2 flex items-center justify-center bottom-4 md:bottom-12 shadow-glow-pink animate-marquee-reverse border-t border-b border-white/30 backdrop-blur-md mix-blend-screen opacity-90">
+            <span
+                class="text-white drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)] font-black uppercase tracking-[0.2em] md:tracking-[0.5em] text-xs md:text-xl lg:text-3xl whitespace-nowrap px-4">
+                EXTREME PROTOCOL /// SYSTEM MASTERY /// EXTREME PROTOCOL /// SYSTEM MASTERY /// EXTREME PROTOCOL ///
+                SYSTEM MASTERY /// EXTREME PROTOCOL /// SYSTEM MASTERY /// EXTREME PROTOCOL ///
+            </span>
+        </div>
+    </div>
+
+    <!-- 11.8 Mega Protocol Features (New Section) -->
+    <section class="py-32 sm:py-40 md:py-48 bg-secondary relative overflow-hidden">
+        <!-- Intense Rotating Core -->
+        <div class="absolute inset-0 flex items-center justify-center pointer-events-none opacity-20">
+            <div
+                class="w-[600px] md:w-[1200px] h-[600px] md:h-[1200px] border border-accentYellow/30 rounded-full animate-[spin_40s_linear_infinite] flex items-center justify-center">
+                <div
+                    class="w-[400px] md:w-[800px] h-[400px] md:h-[800px] border-4 border-dashed border-accentCyan/40 rounded-full animate-[spin_20s_linear_infinite_reverse]">
+                </div>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-3 sm:px-6 md:px-12 text-center relative z-10 reveal mb-32">
+            <h2 class="text-[clamp(28px,9vw,100px)] font-black tracking-tight mb-8">
+                <span class="text-transparent bg-clip-text animate-chroma-cycle">Quantum Overdrive.</span>
+            </h2>
+        </div>
+
+        <div
+            class="container mx-auto px-3 sm:px-6 md:px-12 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8 max-w-[90rem] mx-auto reveal">
+            <!-- Super Colorful Cards -->
+            <div class="glass-card p-5 sm:p-8 md:p-12 rounded-3xl border-4 border-transparent hover:border-accentCyan cursor-alias group transform hover:-translate-y-6 hover:rotate-3 transition-all duration-500 bg-gradient-to-br from-accentCyan/20 to-primary shadow-glow-cyan"
+                data-tilt data-tilt-max="15">
+                <div
+                    class="w-16 h-16 md:w-20 md:h-20 bg-accentCyan text-primary rounded-full flex items-center justify-center text-4xl mb-8 group-hover:scale-125 group-hover:rotate-180 transition-all duration-700">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h4 class="text-3xl font-black text-white mb-4">Hyper Speed</h4>
+                <p class="text-gray-300">0.0ms execution threshold inside the matrix.</p>
+                <div
+                    class="mt-8 px-6 py-2 rounded-full border border-accentCyan text-center text-xs font-bold text-accentCyan group-hover:bg-accentCyan group-hover:text-primary transition-colors">
+                    ACTIVATE</div>
+            </div>
+
+            <div class="glass-card p-5 sm:p-8 md:p-12 rounded-3xl border-4 border-transparent hover:border-accentPink cursor-alias group transform hover:-translate-y-6 hover:-rotate-3 transition-all duration-500 bg-gradient-to-br from-accentPink/20 to-primary shadow-glow-pink"
+                data-tilt data-tilt-max="15">
+                <div
+                    class="w-16 h-16 md:w-20 md:h-20 bg-accentPink text-primary rounded-full flex items-center justify-center text-4xl mb-8 group-hover:scale-125 group-hover:rotate-180 transition-all duration-700">
+                    <i class="fas fa-radiation"></i>
+                </div>
+                <h4 class="text-3xl font-black text-white mb-4">Neon Fusion</h4>
+                <p class="text-gray-300">Intensely bound chromatic anomalies generated natively.</p>
+                <div
+                    class="mt-8 px-6 py-2 rounded-full border border-accentPink text-center text-xs font-bold text-accentPink group-hover:bg-accentPink group-hover:text-primary transition-colors">
+                    INITIATE</div>
+            </div>
+
+            <div class="glass-card p-5 sm:p-8 md:p-12 rounded-3xl border-4 border-transparent hover:border-accentYellow cursor-alias group transform hover:-translate-y-6 hover:rotate-3 transition-all duration-500 bg-gradient-to-br from-accentYellow/20 to-primary shadow-glow-purple"
+                data-tilt data-tilt-max="15">
+                <div
+                    class="w-16 h-16 md:w-20 md:h-20 bg-accentYellow text-primary rounded-full flex items-center justify-center text-4xl mb-8 group-hover:scale-125 group-hover:-rotate-180 transition-all duration-700">
+                    <i class="fas fa-cube"></i>
+                </div>
+                <h4 class="text-3xl font-black text-white mb-4">Supreme Mesh</h4>
+                <p class="text-gray-300">Massive omni-dimensional geometric structuring.</p>
+                <div
+                    class="mt-8 px-6 py-2 rounded-full border border-accentYellow text-center text-xs font-bold text-accentYellow group-hover:bg-accentYellow group-hover:text-primary transition-colors">
+                    RUN CYCLE</div>
+            </div>
+
+            <div class="glass-card p-5 sm:p-8 md:p-12 rounded-3xl border-4 border-transparent hover:border-accentPurple cursor-alias group transform hover:-translate-y-6 hover:-rotate-3 transition-all duration-500 bg-gradient-to-br from-accentPurple/20 to-primary shadow-glow-purple"
+                data-tilt data-tilt-max="15">
+                <div
+                    class="w-16 h-16 md:w-20 md:h-20 bg-accentPurple text-white rounded-full flex items-center justify-center text-4xl mb-8 group-hover:scale-125 group-hover:rotate-180 transition-all duration-700">
+                    <i class="fas fa-code-branch"></i>
+                </div>
+                <h4 class="text-3xl font-black text-white mb-4">Sync Loop</h4>
+                <p class="text-gray-300">Continuous 4D data cyclic replication parameters.</p>
+                <div
+                    class="mt-8 px-6 py-2 rounded-full border border-accentPurple text-center text-xs font-bold text-accentPurple group-hover:bg-accentPurple group-hover:text-white transition-colors">
+                    OVERRIDE</div>
+            </div>
+        </div>
+
+        <!-- Multi-Color Button Cluster -->
+        <div class="flex flex-wrap justify-center gap-6 mt-32 relative z-10 reveal">
+            <button
+                class="px-6 py-3 md:px-12 md:py-5 rounded-full font-black text-primary uppercase tracking-widest bg-accentCyan hover:scale-110 transition-transform shadow-glow-cyan animate-pulse">Alpha
+                Lock</button>
+            <button
+                class="px-6 py-3 md:px-12 md:py-5 rounded-full font-black text-primary uppercase tracking-widest bg-accentPink hover:scale-110 transition-transform shadow-glow-pink">Beta
+                Burst</button>
+            <button
+                class="px-6 py-3 md:px-12 md:py-5 rounded-full font-black text-primary uppercase tracking-widest bg-accentYellow hover:scale-110 transition-transform shadow-glow-purple">Gamma
+                Core</button>
+        </div>
+    </section>
+
+    <!-- 12. Omni-Email Hub (Contact Form) -->
+    <section id="mail-hub" class="py-32 sm:py-40 md:py-48 bg-primary relative overflow-hidden">
+        <!-- Ambient Grid Background -->
+        <div
+            class="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,rgba(0,242,255,0.8)_1px,transparent_1px)] bg-[size:40px_40px]">
+        </div>
+
+        <div class="container mx-auto px-3 sm:px-6 md:px-12 relative z-10 max-w-4xl mx-auto">
+            <div class="text-center mb-24 reveal">
+                <span
+                    class="inline-block border border-accentPurple text-accentPurple px-6 py-2 rounded-full text-xs font-bold uppercase tracking-widest mb-8 bg-accentPurple/10">Transmission</span>
+                <h2
+                    class="text-[clamp(28px,10vw,128px)] font-black tracking-tight mb-8 text-transparent bg-clip-text bg-gradient-to-r from-accentPurple to-accentCyan">
+                    Send Data.</h2>
+                <p class="text-xl text-gray-400">Establish a direct connection into the master architecture.</p>
+            </div>
+
+            <form
+                class="glass-card p-8 sm:p-10 md:p-16 rounded-3xl md:rounded-[40px] border border-white/10 reveal relative hover-glow"
+                data-tilt data-tilt-max="2" data-tilt-speed="500">
+                <div
+                    class="absolute w-20 h-20 md:w-32 md:h-32 bg-accentCyan/20 rounded-full blur-[50px] -top-10 -left-10 animate-pulse">
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-5 md:gap-10 mb-10 relative z-10">
+                    <div>
+                        <label
+                            class="block text-xs font-bold uppercase tracking-widest text-accentCyan mb-4">Identification</label>
+                        <input type="text" placeholder="Your Name"
+                            class="w-full bg-secondary border border-white/10 rounded-2xl px-4 py-3 md:px-6 md:py-4 text-white focus:outline-none focus:border-accentCyan transition-colors">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-widest text-accentPink mb-4">Frequency
+                            Node (Email)</label>
+                        <input type="email" placeholder="example@node.com"
+                            class="w-full bg-secondary border border-white/10 rounded-2xl px-4 py-3 md:px-6 md:py-4 text-white focus:outline-none focus:border-accentPink transition-colors">
+                    </div>
+                </div>
+
+                <div class="mb-12 relative z-10">
+                    <label class="block text-xs font-bold uppercase tracking-widest text-accentYellow mb-4">Transmission
+                        Payload</label>
+                    <textarea placeholder="Describe your architecture requirements..." rows="5"
+                        class="w-full bg-secondary border border-white/10 rounded-2xl px-4 py-3 md:px-6 md:py-4 text-white focus:outline-none focus:border-accentYellow transition-colors resize-none"></textarea>
+                </div>
+
+                <button type="button"
+                    class="w-full py-6 rounded-full bg-white text-primary text-sm font-black uppercase tracking-widest hover:bg-accentCyan transition-all shadow-glow-cyan relative z-10 group overflow-hidden">
+                    <span class="relative z-10">Initiate Uplink</span>
+                    <div
+                        class="absolute inset-0 bg-accentCyan translate-y-[100%] group-hover:translate-y-0 transition-transform duration-500 ease-out z-0">
+                    </div>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Global Footer -->
+    <footer
+        class="bg-primary text-center pt-48 pb-20 relative overflow-hidden colorful-bg-gradient border-t border-white/10">
+        <h2
+            class="text-[clamp(28px,13vw,250px)] font-black leading-none uppercase select-none opacity-20 text-transparent bg-clip-text bg-gradient-to-r from-accentCyan via-accentPink to-accentYellow font-sans whitespace-nowrap overflow-hidden -top-10 absolute left-0 right-0">
+            TALK NOW</h2>
+
+        <div class="container mx-auto px-3 sm:px-6 md:px-12 relative z-10 reveal">
+            <h3 class="text-[clamp(28px,10vw,160px)] font-black tracking-tighter mb-16 uppercase break-words">
+                Initiate.<br></h3>
+            <a href="mailto:robyetulprowork1234@gmail.com"
+                class="inline-block text-[clamp(16px,4vw,60px)] font-black border-b-4 border-white pb-4 hover:border-accentCyan hover:text-accentCyan transition-all mb-32 px-2 whitespace-nowrap overflow-hidden text-ellipsis max-w-full">robyetulprowork1234@gmail.com</a>
+
+            <div
+                class="border-t border-white/10 pt-16 pb-24 md:pb-16 flex flex-col md:flex-row justify-between items-center text-sm font-bold uppercase tracking-widest text-gray-400">
+                <a href="https://robyetulislam.netlify.app/" target="_blank"
+                    class="inline-block px-6 py-2 border border-white/10 rounded-full hover:border-accentCyan hover:text-accentCyan hover:bg-accentCyan/10 transition-all duration-300 transform hover:-translate-y-1 shadow-sm hover:shadow-glow-cyan text-xs">
+                    © 2026 • Powered by <span class="font-black">Code RIR ⚡</span>
+                </a>
+                <div class="flex gap-8 mt-8 md:mt-0">
+                    <a href="#" class="hover:text-accentCyan">Privacy</a>
+                    <a href="#" class="hover:text-accentPink">Terms</a>
+                    <a href="#" class="hover:text-accentYellow">X/Twitter</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Floating Colorful Circle Badge -->
+    <a href="#header" id="floating-badge"
+        class="fixed bottom-6 right-6 md:bottom-10 md:right-10 w-24 h-24 md:w-32 md:h-32 z-[9900] flex items-center justify-center cursor-pointer group pointer-events-auto transition-transform duration-500 hover:scale-110"
+        data-tilt data-tilt-max="20" data-tilt-speed="400">
+        <!-- Colorful aura -->
+        <div
+            class="absolute inset-0 bg-gradient-to-r from-accentCyan via-accentPurple to-accentPink rounded-full blur-[15px] opacity-30 group-hover:opacity-100 transition-opacity duration-500">
+        </div>
+        <div
+            class="absolute inset-0 bg-gradient-to-r from-accentYellow via-accentPink to-accentCyan rounded-full blur-[25px] opacity-0 group-hover:opacity-60 transition-opacity duration-700 animate-pulse">
+        </div>
+
+        <!-- Inner dark circle -->
+        <div
+            class="absolute inset-[4px] bg-primary rounded-full border border-white/20 z-10 group-hover:border-accentPink transition-colors duration-500 shadow-glow-purple">
+        </div>
+
+        <!-- Center Icon -->
+        <i
+            class="fas fa-bolt text-xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-br from-accentCyan to-accentPink z-20 group-hover:scale-125 transition-transform duration-500"></i>
+
+        <!-- Rotating Text SVG -->
+        <svg viewBox="0 0 100 100"
+            class="absolute inset-[-10px] w-[calc(100%+20px)] h-[calc(100%+20px)] z-20 overflow-visible"
+            id="floating-badge-svg">
+            <path id="floatingCirclePath" d="M 50,50 m -40,0 a 40,40 0 1,1 80,0 a 40,40 0 1,1 -80,0" fill="none" />
+            <text font-size="10.5" font-weight="900" fill="currentColor"
+                class="text-white group-hover:text-accentYellow transition-colors duration-500" letter-spacing="1">
+                <textPath xlink:href="#floatingCirclePath">Code_RIR * Code_RIR * Code_RIR * Code_RIR * Code_RIR *
+                </textPath>
+            </text>
+        </svg>
+    </a>
+
+    <!-- Vendor Scripts placed before closing body for lightning fast rendering -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1/bundled/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="three-bg.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

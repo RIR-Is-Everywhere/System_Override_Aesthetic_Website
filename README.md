@@ -1,4 +1,4 @@
-# SYNTX_RIR | Absolute Structural Mastery ⚡
+# System_Override_Aesthetic_Website_CODE_RIR ⚡
 
 A high-performance, vibrant, and interactive digital experience built with absolute precision. This project is a masterpiece of modern web design, blending cyberpunk aesthetics with massive archival protocols.
 
